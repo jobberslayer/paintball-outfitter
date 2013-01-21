@@ -1,0 +1,39 @@
+[%PROCESS config.tt%]
+<html>
+<head>
+<title>[%title%] - Paintball-Outfitter</title>
+<link rel="stylesheet" type="text/css" href="[%css%]/main.css" />
+<link rel="shortcut icon" href="[%images%]/pb_icon.gif" />
+</head>
+<body>
+<table id="table_layout">
+<tr><td>&nbsp;</td>
+<td>
+    <div id="header">
+        <img src="[%images%]/pb_header.jpg">
+    </div>
+</td>
+</tr>
+<tr>
+<td valign="top">
+    [%PROCESS menu.tt%]
+</td>
+<td>
+    <div id="main_content">
+        <div id="stuff">
+        [% INCLUDE $section %]
+        </div>
+    </div>
+</td>
+</tr>
+<tr>
+    <td>&nbsp;</td>
+    <td>
+    <div id="footer">
+        Paintball-Outfitter &copy; [%current_year%]
+    </div>
+    </td>
+</tr>
+</table>
+</body>
+</html>

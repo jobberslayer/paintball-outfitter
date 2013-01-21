@@ -1,0 +1,26 @@
+[%
+    menu_items = [
+        {
+            name = "Paintball",
+            uri = "index.cgi?page=paintball"
+        },
+        {
+            name = "AirSoft",
+            uri = "index.cgi?page=airsoft"
+        },
+        {
+            name = "Laser Tag",
+            uri = "index.cgi?page=lasertag"
+        },
+        {
+            name = "Fields",
+            uri = "index.cgi?page=fields"
+        },
+    ]
+%]
+
+[%FOREACH item IN menu_items %]
+    <div id="menu_item">
+        <li> <a href="[%item.uri%][%IF test%]&test=1[%END%]">[%item.name%]</a>
+    </div>
+[% END %]
