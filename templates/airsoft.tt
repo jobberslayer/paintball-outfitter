@@ -1,0 +1,37 @@
+<table style="padding-left: 10px;">
+<tr>
+<td valign="top">
+    [% PROCESS address.tt %]
+    <br/>
+    [% PROCESS hours.tt %]
+    <br/>
+    [% PROCESS amenities.tt%]
+    <br/>
+</td>
+</tr>
+<td>
+<b>Pricing:</b>
+    <ul>
+    $20.00 per person<br />
+    <ul>
+        <li>Includes Field Fee</li>
+        <li>Does <strong>NOT</strong> include airsoft gun rental.</li>
+    </ul>
+    </ul>
+    <ul>
+    $10.00 per person and up
+    <ul>
+        <li>airsoft gun rental</li>
+        <li>price depends on model rented</li>
+    </ul>
+    </ul>
+    <ul>
+    <li>BB's can be purchased at the Pro Shop.  </li>
+    </ul>
+    <ul>
+    <li>[%PROCESS drink_policy.tt%]
+    </ul>
+</ul>
+</td>
+</tr>
+</table>

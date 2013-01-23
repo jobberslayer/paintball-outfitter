@@ -3,7 +3,7 @@
 <head>
 <title>[%title%] - Paintball-Outfitter</title>
 <link rel="stylesheet" type="text/css" href="[%css%]/main.css" />
-<link rel="shortcut icon" href="[%images%]/pb_icon.gif" />
+<link rel="shortcut icon" href="[%images%]/pb_icon.png" />
 </head>
 <body>
 <table id="table_layout">
