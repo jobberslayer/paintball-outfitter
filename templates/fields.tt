@@ -1,0 +1,109 @@
+[%
+    negatives_id="kjfield";
+    negative_images = [
+        {
+            url = '/images/castle/castle01.jpg',
+            name="castle01",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle02.jpg',
+            name="castle02",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle03.jpg',
+            name="castle03",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle04.jpg',
+            name="castle04",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle05.jpg',
+            name="castle05",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle06.jpg',
+            name="castle06",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle07.jpg',
+            name="castle07",
+            location="King James Field",
+            description = "This is the castle",
+        },
+    ];
+
+    PROCESS negatives.tt
+%]
+
+[%
+    negatives_id="kjfield2";
+    negative_images = [
+        {
+            url = '/images/castle/castle2_1.jpg',
+            name="castle2_1",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle2_2.jpg',
+            name="castle2_2",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle2_3.jpg',
+            name="castle2_3",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle2_4.jpg',
+            name="castle2_4",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle2_5.jpg',
+            name="castle2_5",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle2_6.jpg',
+            name="castle2_6",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle2_7.jpg',
+            name="castle2_7",
+            location="King James Field",
+            description = "This is the castle",
+        },
+        {
+            url = '/images/castle/castle2_7.jpg',
+            name="castle2_72",
+            location="King James Field",
+            description = "This is the castle",
+        },
+    ];
+
+    PROCESS negatives.tt
+%]
+
+<script type="">
+    $("img[rel]").overlay();
+</script>

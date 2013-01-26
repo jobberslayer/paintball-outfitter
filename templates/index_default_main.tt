@@ -1,17 +1,14 @@
 [%PROCESS config.tt%]
+[%PROCESS type_declaration.tt%]
 <html>
 <head>
-<title>[%title%] - Paintball-Outfitter</title>
-<link rel="stylesheet" type="text/css" href="[%css%]/main.css" />
-<link rel="shortcut icon" href="[%images%]/pb_icon.png" />
+[%PROCESS index_default_head.tt%]
 </head>
 <body>
 <table id="table_layout">
 <tr><td>&nbsp;</td>
 <td>
-    <div id="header">
-        <img src="[%images%]/pb_header.jpg">
-    </div>
+        <img src="[%images%]/pb_header.jpg" alt="header image"/>
 </td>
 </tr>
 <tr>
@@ -20,9 +17,7 @@
 </td>
 <td>
     <div id="main_content">
-        <div id="stuff">
         [% INCLUDE $section %]
-        </div>
     </div>
 </td>
 </tr>

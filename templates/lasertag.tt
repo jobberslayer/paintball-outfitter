@@ -1,0 +1,17 @@
+<img src="/images/flyer/lasertag_header.gif" class="center" alt="LaserTag logo"/>
+<br/>
+<div class="basic_container">
+[%PROCESS common_info.tt%]
+    <ul>
+        <li>$30 field price and rental per person </li>
+        <li>Rent great Laser Tag equipment.</li>
+        <li>Play with Worlds of Wonder Lazer Tag equipment, still in perfect working condition.</li>
+        <li>Play on the same paintball fields with guns that can reach up to 100+ yards.</li>
+        <li>Enjoy the thrill of the hunt without the sting of paintballs.</li>
+        <li>Numerous other laser tag brands and equipment for lots of fun combinations.</li>
+        <li>Great for large or small groups.</li>
+        <li>More affordable for beginners.</li>
+        <li>Fun for children and adults of all ages.</li>
+        <li>[%PROCESS drink_policy.tt%]</li>
+    </ul>
+</div>

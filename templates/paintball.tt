@@ -1,114 +1,94 @@
-<table border="0" width="100%" style="" bgcolor="white">
+<table border="0" width="100%" style="background-color: #FFFFFF">
 <!-- TOP -->
 <tbody>
 <tr>
-    <td align="center"><img src="/images/flyer/left01.jpg" border="0" /></td>
-    <td width="100%" align="center"><img src="/images/flyer/top2.jpg" border="0" /></td>
-    <td align="center"><img src="/images/flyer/right01.jpg" border="0" /></td>
+    <td align="center"><img src="/images/flyer/left01.jpg" alt="company logo" /></td>
+    <td style="width=100%" align="center"><img src="/images/flyer/top2.jpg" alt="company logo" /></td>
+    <td align="center"><img src="/images/flyer/right01.jpg" alt="company logo" /></td>
 </tr>
 <!-- MIDDLE -->
 <tr>
     <!-- LEFT SIDE -->
     <td valign="top">
-        <table border="0">
+        <table style="border 0px;">
         <tbody><tr>
-            <td><img src="/images/flyer/left02.jpg" border="0" /></td>
+            <td><img src="/images/flyer/left02.jpg" alt="company logo"/></td>
         </tr><tr>
-            <td><img src="/images/flyer/left03.jpg" border="0" /></td>
+            <td><img src="/images/flyer/left03.jpg" alt="company logo"/></td>
         </tr><tr>
-            <td><img src="/images/flyer/left04.jpg" border="0" /></td>
+            <td><img src="/images/flyer/left04.jpg" alt="company logo"/></td>
         </tr><tr>
-            <td><img src="/images/flyer/left05.png" border="0" /></td>
+            <td><img src="/images/flyer/left05.png" alt="company logo"/></td>
         </tr><tr>
-            <td><img src="/images/flyer/left06.png" border="0" /></td>
+            <td><img src="/images/flyer/left06.png" alt="company logo"/></td>
         </tr><tr>
-            <td><img src="/images/flyer/left07.png" border="0" /></td>
+            <td><img src="/images/flyer/left07.png" alt="company logo"/></td>
         </tr><tr>
-            <td><img src="/images/flyer/left08.png" border="0" /></td>
+            <td><img src="/images/flyer/left08.png" alt="company logo"/></td>
         </tr><tr>
-            <td><img src="/images/flyer/left09.png" border="0" /></td>
+            <td><img src="/images/flyer/left09.png" alt="company logo"/></td>
         </tr><tr>
-            <td><img src="/images/flyer/left10.png" border="0" /></td>
+            <td><img src="/images/flyer/left10.png" alt="company logo"/></td>
         </tr><tr>
-            <td><img src="/images/flyer/left11.png" border="0" /></td>
+            <td><img src="/images/flyer/left11.png" alt="company logo"/></td>
         </tr></tbody></table>
     </td>
     <!-- CONTENT -->
     <td valign="top">
-        [% PROCESS address.tt %]
+        [% PROCESS common_info.tt %]
         <br/>
-        [% PROCESS hours.tt %]
-        <br/>
-        [% PROCESS amenities.tt%]
-        <br/>
+        <span><b>Field play:</b></span><br/>
+        <span><span class="indented">Starting at $40 per person with rental</span ></span><br/>
+        <span class="indented"><b>Includes</b></span>
+        <ul>
+            <li>500 balls all day Air/CO2</li>
+            <li>Marker, hopper, tank, and mask</li>
+            <li>$35 per person W/O rental</li>
+            <li>No field fee. <b>FIELD PAINT ONLY!!</b></li>
+            <li>$30.00 rental package. This includes marker, mask, air, 250 paintballs and entry fee.</li>
+            <li>[%PROCESS drink_policy.tt%]</li>
+        </ul>
+        <span><b>Fills:</b> CO2 all sizes N2/Air up to 5000psi </span>
+        <br/><br/>
+        <span><b>Rental Upgrades:</b> Tippman 98/A5, PCS US*5</span>
+        <br/><br/>
+        <span>Large selection of ball upgrades.</span>
+        <br/><br/>
+        <span><b>Full Pro Shop:</b></span>
+        <ul>
+            <li> Airgun smith on site.</li>
+            <li> Machine work on site.</li>
+        </ul>
+        <span>
+            Full line of markers, hoppers, tanks, barrels, harness, jerseys, pants and protective gear.<br /><br/>
+            We are the least expensive in GA.<br />Please stop by and see us.<br />Ask us about our FREE HPA.<br /><br />
+            <strong>Remember we do parties, church groups, or just large groups of friends.</strong><br /><br />
+        </span>
+    </td>
+    <!-- RIGHT SIDE -->
+    <td valign="top">
         <table border="0"><tbody><tr>
-            <td valign="top"><br/><b>Field play:<b></td>
-            </tr><tr>
-            <td>
-                Starting at $40 per person with rental<br />
-                <ul>
-                <b>Includes</b>
-                <hr/>
-                <li>500 balls all day Air/CO2
-                <li>Marker, hopper, tank, and mask
-                <li>$35 per person W/O rental
-                <li>No field fee. <b>FIELD PAINT ONLY!!</b>
-                <li>$30.00 rental package. This includes marker, mask, air, 250 paintballs and entry fee.
-                <li>[%PROCESS drink_policy.tt%]
-                </ul>
-            </td></tr></tbody>
-            </table><table border="0"><tbody><tr>
-                <td valign="top"><br/><b>Fills:</b></td>
-                <td valign="top" style="padding-left: 10px;"><br/>CO2 all sizes N2/Air up to 5000psi</b> </td>
-            </tr></tbody></table>
-            <table border="0"><tbody><tr>
-                <td valign="top"><br/><b>Rental Upgrades:</b></td>
-                <td valign="top" style="padding-left: 10px;"><br/>Tippman 98/A5, PCS US*5</td>
-            </tr></tbody></table>
-            <table border="0"><tbody><tr>
-                <td><br/>Large selection of ball upgrades.</td>
-            </tr></tbody></table>
-            <table border="0"><tbody><tr>
-                <td valign="top"><br/><b>Full Pro Shop:</b></td>
-                </tr><tr>
-                <td valign="top" style="padding-left: 10px;">
-                    <li> Airgun smith on site.
-                    <li> Machine work on site.
-            </tr></tbody></table>
-            <table border="0"><tbody><tr>
-                <td><br/>Full line of markers, hoppers, tanks, barrels, harness, jerseys, pants and protective gear.<br /><br/>
-                    We are the least expensive in GA.<br />Please stop by and see us.<br />Ask us about our FREE HPA.<br /><br />
-                    <strong>Remember we do parties, church groups, or just large groups of friends.</strong><br /><br />
-                </td>
-            </tr></tbody></table>
-            </td>
-            <!-- RIGHT SIDE -->
-            <td valign="top">
-                <table border="0"><tbody><tr>
-                    <td><img src="/images/flyer/right02.jpg" border="0" /></td>
-                </tr><tr>
-                    <td><img src="/images/flyer/right03.jpg" border="0" /></td>
-                </tr><tr>
-                    <td><img src="/images/flyer/right04.png" border="0" /></td>
-                </tr><tr>
-                    <td><img src="/images/flyer/right05.png" border="0" /></td>
-                </tr><tr>
-                    <td><img src="/images/flyer/right06.png" border="0" /></td>
-                </tr><tr>
-                    <td><img src="/images/flyer/right07.png" border="0" /></td>
-                </tr><tr>
-                    <td><img src="/images/flyer/right08.png" border="0" /></td>
-                </tr><tr>
-                    <td><img src="/images/flyer/right09.png" border="0" /></td>
-                </tr><tr>
-                    <td><img src="/images/flyer/right10.png" border="0" /></td>
-                </tr><tr>
-                    <td><img src="/images/flyer/right11.png" border="0" /></td>
-                </tr></tbody></table>
-            </td>
-        </tr>
-    </tbody></table>
-</td>
+            <td><img src="/images/flyer/right02.jpg" alt="company logo" /></td>
+        </tr><tr>
+            <td><img src="/images/flyer/right03.jpg" alt="company logo" /></td>
+        </tr><tr>
+            <td><img src="/images/flyer/right04.png" alt="company logo" /></td>
+        </tr><tr>
+            <td><img src="/images/flyer/right05.png" alt="company logo" /></td>
+        </tr><tr>
+            <td><img src="/images/flyer/right06.png" alt="company logo" /></td>
+        </tr><tr>
+            <td><img src="/images/flyer/right07.png" alt="company logo" /></td>
+        </tr><tr>
+            <td><img src="/images/flyer/right08.png" alt="company logo" /></td>
+        </tr><tr>
+            <td><img src="/images/flyer/right09.png" alt="company logo" /></td>
+        </tr><tr>
+            <td><img src="/images/flyer/right10.png" alt="company logo" /></td>
+        </tr><tr>
+            <td><img src="/images/flyer/right11.png" alt="company logo" /></td>
+        </tr></tbody></table>
+    </td>
 </tr>
-
+</tbody>
 </table>

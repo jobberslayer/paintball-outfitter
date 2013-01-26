@@ -20,7 +20,9 @@
 %]
 
 [%FOREACH item IN menu_items %]
-    <div id="menu_item">
-        <li> <a href="[%item.uri%][%IF test%]&test=1[%END%]">[%item.name%]</a>
+    <div class="menu_item">
+        <ul>
+            <li> <a href="[%item.uri%][%IF test%]&amp;test=1[%END%]">[%item.name%]</a></li>
+        </ul>
     </div>
 [% END %]

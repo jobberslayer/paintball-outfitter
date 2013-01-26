@@ -1,0 +1,40 @@
+<div style="width: [%thumb_list_width%]; height:[%thumb_height%];">
+
+    <!-- root element for scrollable -->
+    <div class="scrollable" id="[%negatives_id%]">
+
+        <!-- root element for the items -->
+        <div class="items">
+            <div class="triggers">
+            [%FOREACH img IN negative_images%]
+                <img src="[%img.url%]" style="width:[%thumb_width%]; height:[%thumb_height%]" alt="thumbnail" rel="#[%negatives_id%]_[%loop.count%]"/>
+            [%IF loop.count mod 4 == 0 and !loop.last%]
+            </div>
+            <div class="triggers">
+            [%END%]
+            [%END%]
+            </div>
+        </div>
+    </div>
+    <div style="text-align:center; width:600px;">
+        <!-- "previous page" action -->
+        <a class="prev browse left">&lt;&lt;&lt;</a>
+        &nbsp;&nbsp;&nbsp;
+        <!-- "next page" action -->
+        <a class="next browse right">&gt;&gt;&gt;</a>
+    </div>
+</div>
+[%FOREACH img IN negative_images%]
+<div class="simple_overlay" id="[%negatives_id%]_[% loop.count %]">
+  <!-- large image -->
+  <img src="[%img.url%]" alt="normal image"/>
+
+  <!-- image details -->
+  <div class="details">
+    <h3>[%img.name%]</h3>
+    <h4>[%img.location%]</h4>
+    <p>[%img.description%]</p>
+  </div>
+</div>
+[%END%]
+<br/>

@@ -1,0 +1,7 @@
+<title>[%title%] - Paintball-Outfitter</title>
+<link rel="stylesheet" type="text/css" href="[%css%]/main.css" />
+<link rel="shortcut icon" href="[%images%]/pb_icon.png"/>
+<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js" type=""></script>
+[%IF section == "fields.tt"%]
+    [%PROCESS scrollable_setup.tt%]
+[%END%]

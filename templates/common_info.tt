@@ -1,0 +1,5 @@
+[% PROCESS address.tt %]
+<br/>
+[% PROCESS hours.tt %]
+<br/>
+[% PROCESS amenities.tt%]

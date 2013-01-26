@@ -1,37 +1,21 @@
-<table style="padding-left: 10px;">
-<tr>
-<td valign="top">
-    [% PROCESS address.tt %]
-    <br/>
-    [% PROCESS hours.tt %]
-    <br/>
-    [% PROCESS amenities.tt%]
-    <br/>
-</td>
-</tr>
-<td>
+<div class="basic_container">
+    [% PROCESS common_info.tt %]
+</div>
+<br/>
+<div class="basic_container">
 <b>Pricing:</b>
-    <ul>
-    $20.00 per person<br />
+    <p class="indented">$20.00 per person</p>
     <ul>
         <li>Includes Field Fee</li>
         <li>Does <strong>NOT</strong> include airsoft gun rental.</li>
     </ul>
-    </ul>
-    <ul>
-    $10.00 per person and up
+    <p class="indented">$10.00 per person and up</p>
     <ul>
         <li>airsoft gun rental</li>
         <li>price depends on model rented</li>
-    </ul>
-    </ul>
-    <ul>
-    <li>BB's can be purchased at the Pro Shop.  </li>
+        <li>BB's can be purchased at the Pro Shop.  </li>
     </ul>
     <ul>
-    <li>[%PROCESS drink_policy.tt%]
+        <li>[%PROCESS drink_policy.tt%]</li>
     </ul>
-</ul>
-</td>
-</tr>
-</table>
+</div>
