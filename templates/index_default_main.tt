@@ -5,30 +5,26 @@
 [%PROCESS index_default_head.tt%]
 </head>
 <body>
-<table id="table_layout">
-<tr><td>&nbsp;</td>
-<td>
-        <img src="[%images%]/pb_header.jpg" alt="header image"/>
-</td>
-</tr>
-<tr>
-<td valign="top">
-    [%PROCESS menu.tt%]
-</td>
-<td>
-    <div id="main_content">
+<div style="width: 100%; overflow: hidden; margin:0px; padding: 0px;">
+    <div style="width: 200px; float: left;">&nbsp;</div>
+    <div id="header" style="margin-left: 220px;"><img src="[%images%]/pb_header.jpg" alt="header image"/></div>
+</div>
+<div style="width: 100%; overflow: hidden; margin:0px; padding: 0px;">
+    <div style="width: 200px; float: left;">[%PROCESS menu.tt%]</div>
+    <div id="main_content" style="margin-left: 220px;">
+        [% IF errors.size > 0 %]
+        <div class="error_msg">
+            [%FOREACH err IN errors%]
+            [% err.msg %]
+            [%END%]
+        </div>
+        [%END%]
         [% INCLUDE $section %]
     </div>
-</td>
-</tr>
-<tr>
-    <td>&nbsp;</td>
-    <td>
-    <div id="footer">
-        Paintball-Outfitter &copy; [%current_year%]
-    </div>
-    </td>
-</tr>
-</table>
+</div>
+<div style="width: 100%; overflow: hidden; margin:0px; padding: 0px;">
+    <div style="width: 200px; float: left;">&nbsp;</div>
+    <div id="footer" style="margin-left: 220px;">Paintball-Outfitter &copy; [%current_year%]</div>
+</div>
 </body>
 </html>

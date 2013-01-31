@@ -1,0 +1,36 @@
+
+<div class="normal">
+    <form name=myform action=index.cgi method=post>
+        <input type=hidden name=action value="add"/>
+        <input type=hidden name=test value="[%test%]"/>
+        <center>
+        <table>
+        <tr>
+        <th>Name:</th>
+        <td><input type=text name=name size=30></td>
+        </tr><tr>
+        <th>Comment</th>
+        </tr><tr>
+        <td colspan=2><textarea name=comment cols=40 rows=3 maxlength=200></textarea></td>
+        </tr>
+        </table>
+        <input type=submit value="Add Comment">
+    </form>
+</div>
+<br/>
+<hr/>
+<div class="normal">
+    <form name=myform action=index.cgi method=post>
+        <input type=hidden name=action value="delete"/>
+        <input type=hidden name=test value="[%test%]"/>
+        <input type=submit value="Delete Comments">
+        <hr/>
+        [%FOREACH comment IN comments%]
+        <input type=checkbox name=pick_[%comment.unixtime%] value="<TMPL_VAR NAME=unixtime>">
+        <b><small>[%comment.name%] @ [%comment.timestamp%]</small></b><br>
+        <small>[%comment.text%]</small>
+        <hr/>
+         <br>
+        [%END%]
+    </form>
+</div>

@@ -7,7 +7,7 @@
         <div class="items">
             <div class="triggers">
             [%FOREACH img IN negative_images%]
-                <img src="[%img.url%]" style="width:[%thumb_width%]; height:[%thumb_height%]" alt="thumbnail" rel="#[%negatives_id%]_[%loop.count%]"/>
+                <img src="[%img.url%]" style="width:[%thumb_width%];height:[%thumb_height%];" alt="thumbnail" rel="#[%negatives_id%]_[%loop.count%]"/>
             [%IF loop.count mod 4 == 0 and !loop.last%]
             </div>
             <div class="triggers">
@@ -26,15 +26,20 @@
 </div>
 [%FOREACH img IN negative_images%]
 <div class="simple_overlay" id="[%negatives_id%]_[% loop.count %]">
-  <!-- large image -->
-  <img src="[%img.url%]" alt="normal image"/>
+    <!-- large image -->
+    <table>
+    <tr>
+        <td><img src="[%img.url%]" alt="normal image"/></td>
 
-  <!-- image details -->
-  <div class="details">
-    <h3>[%img.name%]</h3>
-    <h4>[%img.location%]</h4>
-    <p>[%img.description%]</p>
-  </div>
+        [% IF img.description%]
+        <!-- image details -->
+        <td class="details">
+            <h3>[%img.location%]</h3>
+            <p>[%img.description%]</p>
+        </td>
+        [%END%]
+    </tr>
+    </table>
 </div>
 [%END%]
 <br/>

@@ -1,5 +1,18 @@
-<p>Paintball-Outfitter has all your paintball, airsoft and laser tag needs. We sell
-paintball makers, airsoft and accessories from all your favorite brands.  We
-rent laser tag equipment.  Come play either of your favorite on one of three
-outdoor fields, each with it's own unique flavor.
-</p>
+<div class="normal">
+    <p>Paintball-Outfitter has all your paintball, airsoft and laser tag needs. We sell
+    paintball makers, airsoft and accessories from all your favorite brands.  We
+    rent laser tag equipment.  Come play either of your favorite on one of three
+    outdoor fields, each with it's own unique flavor.
+    </p>
+    <p>[%PROCESS waiver.tt%]</p>
+    <h3>Comments</h3>
+    <hr/>
+    <div style="width:100%; height:200px; overflow: auto">
+        [%FOREACH comment IN comments%]
+        <b><small>[%comment.name%] @ [%comment.timestamp%]</small></b><br>
+        <small>[%comment.text%]</small>
+        <hr/>
+        <br>
+        [%END%]
+    </div>
+</div>
