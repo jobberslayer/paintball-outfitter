@@ -2,61 +2,85 @@ body {
     background: #5C1910;
     color: #000000;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    margin:10px 10px; padding:0px;
-    width:600px;
+    margin:0px 0px;
+    padding:0px;
 }
 
 a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
 }
 
-#menu_item {
-    height: 100%;
-    width: 200px;
-    border:3px solid #333;
-    background-color: #eee;
+a:hover {
+    color: #0099FF;
+    background-image: url();
+    text-decoration: underline overline;
+}
+
+.menu_item {
+    /*border:3px solid #333;*/
+    /*background-color: #eee;*/
     padding: 0px 0px 0px 5px;
-    list-style: none;
-    margin-left: 0;
+    margin: 0px;
+    margin-right: 20px;
+    list-style-type: none;
 }
 
-#menu_item li {
+.menu_item ul {
+    list-style-type: none;
+}
+
+.menu_item ul li {
     padding-left: 16px;
-    padding-bottom: 5px;
-    background-image: url(/images/pb_icon.gif);
+    _padding-left: 0px;
+    background-image: url(/images/pb_icon.png);
     background-repeat: no-repeat;
-    background-position: 0 .5em;
 }
 
-#table_layout {
-    padding: 0px;
+.menu_item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-#table_layout tr {
-    padding:0px;
+.menu_item a:hover {
+    color: #0099FF;
+    background-image: url();
+    text-decoration: underline overline;
 }
 
-#table_layout td {
-    padding:0px;
+.indented {
+    padding-left: 15px;
+}
+
+.normal {
+    margin: 5px 5px 5px 5px;
+}
+
+.error_msg {
+   margin: 5px 5px 5px 5px;
+   padding: 5px 5px 5px 5px;
+   background-color: #ff0000;
+   color: #FFFFFF;
+   font-weight: bold;
 }
 
 #header {
-    margin:5px auto;
     width:600px;
-    height:150px;
-    border:3px solid #333;
-}
-#main_content {
-    border: 3px double black;
-    width:600px;
-    height: 300px;
-    border:3px solid #333;
-    background-color:#eee;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
 }
 
-#stuff {
-    padding:0px 5px 2px 5px;
+#main_content {
+    width:600px;
+    /* background-color:#eee; */
+    background-color: #FFFFFF;
+    border-right: 3px solid black;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
 }
 
 #footer {
@@ -68,3 +92,56 @@ a {
     text-align: center;
     padding:0px;
 }
+
+.basic_container {
+    padding-left: 10px;
+}
+
+img.center { display: block;   margin-left: auto;   margin-right: auto; }
+
+/* overlay style */
+/* the overlayed element */
+.simple_overlay {
+
+    /* must be initially hidden */
+    display:none;
+
+    /* place overlay on top of other elements */
+    z-index:10000;
+
+    /* styling */
+    background-color:#333;
+    min-height:200px;
+    border:1px solid #666;
+
+    /* CSS3 styling for latest browsers */
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;
+}
+
+/* close button positioned on upper right corner */
+.simple_overlay .close {
+    background-image:url(/images/close_button.png);
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+
+/* styling for elements inside overlay */
+.details {
+  vertical-align: top;
+  width:200px;
+  font-size:11px;
+  color:#fff;
+  width:150px;
+  padding: 5px 5px 5px 5px;
+}
+
+.details h3 {
+  color:#aba;
+  font-size:15px;
+}
+/* /overlay style */

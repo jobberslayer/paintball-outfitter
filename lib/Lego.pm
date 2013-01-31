@@ -7,9 +7,11 @@ use FindBin qw($Bin);
 sub new {
     my ($class, %args) = @_;
 
-    my $template_dir = "$Bin/templates";
+    my $root = $args{root} || $Bin;
 
-    my $config = YAML::LoadFile($args{config});
+    my $template_dir = "$root/templates";
+
+    my $config = YAML::LoadFile($root . "/" . $args{config});
 
     my $template = Template->new({
         INCLUDE_PATH => $template_dir,
@@ -18,12 +20,16 @@ sub new {
     my $self = {
         cgi          => $args{cgi},
         key          => $args{key},
+        page         => $args{page} || 'page',
+        action       => $args{action} || 'action',
         default      => $args{default},
         mapping      => $args{mapping},
         tmpl_dir     => $template_dir,
         tmpl_obj     => $template,
         tmpl_main    => $args{base_tmpl},
         config       => $config,
+        root         => $root,
+        errors       => [],
     };
 
     return bless $self, $class;
@@ -62,23 +68,51 @@ sub add_tmpl_vars {
 sub process {
     my ($self) = @_;
 
-    my ($vars, $cgi, $key, $default, $mapping) = $self->members();
+    my ($vars, $cgi, $page, $action, $default, $mapping) = $self->members();
 
     if ($self->{config}->{site_down} and !$$vars{test}) {
         $self->site_down();
         return;
     }
 
-    my $function;
+    my $action_func = $self->get_function_name($action);
+    if ($action_func) {
+        $self->$action_func();
+    }
+
+    my $page_func = $self->get_function_name($page);
+
+    if ($page_func) {
+        $self->$page_func();
+    } else {
+        my $func = "${page}_default";
+        $self->$func;
+    }
+}
+
+sub get_function_name {
+    my ($self, $key) = @_;
+
+    my ($vars, $cgi, $page, $action, $default, $mapping) = $self->members();
+
+    my $function = undef;
     if ($$mapping{$$vars{$key}}) {
         $function = $$mapping{$$vars{$key}};
     } elsif ($default) {
         $function = $$mapping{$default};
     } else {
-        $function = 'default';
+        $function = $$vars{$key};
     }
 
-    $self->$function();
+    my $func = "";
+    if (defined $function && $self->can("${key}_${function}")) {
+        $func = "${key}_${function}";
+    } else {
+        $func = "";
+    }
+
+    return $func;
+
 }
 
 sub default {
@@ -98,13 +132,22 @@ sub members {
 
     my %vars = $self->{cgi}->Vars;
 
-    return (\%vars, $self->{cgi}, $self->{key}, $self->{default}, $self->{mapping});
+    #add error messages
+    $vars{errors} = $self->{errors};
+
+    return (\%vars, $self->{cgi}, $self->{page}, $self->{action}, $self->{default}, $self->{mapping});
 }
 
 sub hdr_html {
     my ($self) = @_;
 
     return $self->{cgi}->header('text/html');
+}
+
+sub add_error {
+    my ($self, $error) = @_;
+
+    push @{$self->{errors}}, {msg => $error};
 }
 
 1;
