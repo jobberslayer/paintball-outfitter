@@ -1,272 +1,288 @@
 <div class="normal">
-<h3>Wiaver</h3>
-<p>
-    [%PROCESS waiver.tt%].
-</p>
+    <h3>Wiaver</h3>
+    <p>
+        [%PROCESS waiver.tt%].
+    </p>
+    
+    <ul class="tabs">
+        <li><a href="#">Castle</a></li>
+        <li><a href="#">Town</a></li>
+        <li><a href="#">SpeedBall</a></li>
+        <li><a href="#">ActionShots</a></li>
+        <li><a href="#">FieldMap</a></li>
+    </ul>
 
-<h3>King James Castle</h3>
-<p>
-    King James Castle is a full 3 dimensional castle front perfect assault scenerios.
-    Bring your marker and modern strategy into the middle ages to see how they fare.
-</p>
-[%
-    negatives_id="kjcastle";
-    negative_images = [
-        {
-            url = '/images/castle/castle01.jpg',
-            location="King James Castle",
-            description = "A full length X foot castle with working gate and numerous defendable points.",
-        },
-        {
-            url = '/images/castle/castle2_2.jpg',
-            location="King James Castle",
-            description = "Gate can be raised and works on X system",
-        },
-        {
-            url = '/images/castle/castle2_3.jpg',
-            location="King James Castle",
-            description = "Plenty of railing and safe support make for great crows nests for getting the high ground as you defend your stronghold.",
-        },
-        {
-            url = '/images/castle/castle2_4.jpg',
-            location="King James Castle",
-            description = "Numerous locations to get the perfect shot on your assaulting foes.",
-        },
-        {
-            url = '/images/castle/castle2_5.jpg',
-            location="King James Castle",
-            description = "Large structures provide for quick and safe position changes.",
-        },
-        {
-            url = '/images/castle/castle2_6.jpg',
-            location="King James Castle",
-            description = "Lots of cover for assaulting this massive fortress.",
-        },
-        {
-            url = '/images/castle/castle2_7.jpg',
-            location="King James Castle",
-            description = "Try to flank and elude enemy onslaughts.",
-        },
-    ];
+    <div class="panes">
+        <div>
+            <h3>King James Castle</h3>
+            <p>
+                King James Castle is a full 3 dimensional castle front perfect assault scenerios.
+                Bring your marker and modern strategy into the middle ages to see how they fare.
+            </p>
+            [%
+                negatives_id="kjcastle";
+                negative_images = [
+                    {
+                        url = '/images/castle/castle01.jpg',
+                        location="King James Castle",
+                        description = "A full length X foot castle with working gate and numerous defendable points.",
+                    },
+                    {
+                        url = '/images/castle/castle2_2.jpg',
+                        location="King James Castle",
+                        description = "Gate can be raised and works on X system",
+                    },
+                    {
+                        url = '/images/castle/castle2_3.jpg',
+                        location="King James Castle",
+                        description = "Plenty of railing and safe support make for great crows nests for getting the high ground as you defend your stronghold.",
+                    },
+                    {
+                        url = '/images/castle/castle2_4.jpg',
+                        location="King James Castle",
+                        description = "Numerous locations to get the perfect shot on your assaulting foes.",
+                    },
+                    {
+                        url = '/images/castle/castle2_5.jpg',
+                        location="King James Castle",
+                        description = "Large structures provide for quick and safe position changes.",
+                    },
+                    {
+                        url = '/images/castle/castle2_6.jpg',
+                        location="King James Castle",
+                        description = "Lots of cover for assaulting this massive fortress.",
+                    },
+                    {
+                        url = '/images/castle/castle2_7.jpg',
+                        location="King James Castle",
+                        description = "Try to flank and elude enemy onslaughts.",
+                    },
+                ];
 
-    PROCESS negatives.tt
-%]
+                PROCESS negatives.tt
+            %]
+        </div>
 
-<h3>King James Town</h3>
-<p>
-    King James Town jumps you from the middle ages of King James Castle into the wild, wild west.
-    Complete with bank, general store and even a church; all of the good, the bad and the ugly of your
-    group will face off a high noon.
-</p>
-[%
-    negatives_id="kjtown";
-    negative_images = [
-        {
-            url = '/images/town/fort.jpg',
-            location="King James Town",
-            description = "A fort to defend from attacking savages.",
-        },
-        {
-            url = '/images/town/church.jpg',
-            location="King James Town",
-            description = "Come pray that you will leave to fight another day at the town church.",
-        },
-        {
-            url = '/images/town/general_store.jpg',
-            location="King James Town",
-            description = "This general store may provide more cover than farming supplies.",
-        },
-        {
-            url = '/images/town/general_store_inside.jpg',
-            location="King James Town",
-            description = "Inside the general store you may be able to gain some advantage on the roof.",
-        },
-        {
-            url = '/images/town/general_store_trap_door.jpg',
-            location="King James Town",
-            description = "A trap door that leads to the general store roof and getting the drop on the sheriff.",
-        },
-        {
-            url = '/images/town/jail.jpg',
-            location="King James Town",
-            description = "Jail is the perfect place to hold and guard dirty, no good outlaws.",
-        },
-        {
-            url = '/images/town/jail_back.jpg',
-            location="King James Town",
-            description = "Access to the jail's roof will help with guard duty.",
-        },
-        {
-            url = '/images/town/bank.jpg',
-            location="King James Town",
-            description = "You and your gang of outlaws can make an early withdrawal from the bank.",
-        },
-        {
-            url = '/images/town/town01.jpg',
-            location="King James Town",
-            description = "Ride on in to King James Town if you got the guts.",
-        },
-    ];
+        <div>
+            <h3>King James Town</h3>
+            <p>
+                King James Town jumps you from the middle ages of King James Castle into the wild, wild west.
+                Complete with bank, general store and even a church; all of the good, the bad and the ugly of your
+                group will face off a high noon.
+            </p>
+            [%
+                negatives_id="kjtown";
+                negative_images = [
+                    {
+                        url = '/images/town/fort.jpg',
+                        location="King James Town",
+                        description = "A fort to defend from attacking savages.",
+                    },
+                    {
+                        url = '/images/town/church.jpg',
+                        location="King James Town",
+                        description = "Come pray that you will leave to fight another day at the town church.",
+                    },
+                    {
+                        url = '/images/town/general_store.jpg',
+                        location="King James Town",
+                        description = "This general store may provide more cover than farming supplies.",
+                    },
+                    {
+                        url = '/images/town/general_store_inside.jpg',
+                        location="King James Town",
+                        description = "Inside the general store you may be able to gain some advantage on the roof.",
+                    },
+                    {
+                        url = '/images/town/general_store_trap_door.jpg',
+                        location="King James Town",
+                        description = "A trap door that leads to the general store roof and getting the drop on the sheriff.",
+                    },
+                    {
+                        url = '/images/town/jail.jpg',
+                        location="King James Town",
+                        description = "Jail is the perfect place to hold and guard dirty, no good outlaws.",
+                    },
+                    {
+                        url = '/images/town/jail_back.jpg',
+                        location="King James Town",
+                        description = "Access to the jail's roof will help with guard duty.",
+                    },
+                    {
+                        url = '/images/town/bank.jpg',
+                        location="King James Town",
+                        description = "You and your gang of outlaws can make an early withdrawal from the bank.",
+                    },
+                    {
+                        url = '/images/town/town01.jpg',
+                        location="King James Town",
+                        description = "Ride on in to King James Town if you got the guts.",
+                    },
+                ];
 
-    PROCESS negatives.tt
-%]
+                PROCESS negatives.tt
+            %]
+        </div>
 
-<h3>Speed Ball</h3>
-<p>
-    If you want to escape the fantasy of King James Town and Castle and
-    just get back to good, old fashioned speed ball; we got you covered.
-</p>
-[%
-    negatives_id="speedball";
-    negative_images = [
-        {
-            url = '/images/speedball/speedball01.jpg',
-            location="Speed Ball",
-            description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/speedball/speedball02.jpg',
-            location="Speed Ball",
-            description = "Numerous barrels that are easily movable to set up the field as you wish.",
-        },
-        {
-            url = '/images/speedball/speedball03.jpg',
-            location="Speed Ball",
-            description = "A large supply of spools is available for use on the field.",
-        },
-        {
-            url = '/images/speedball/speedball04.jpg',
-            location="Speed Ball",
-            description = "Larger view of the field.",
-        },
-        {
-            url = '/images/speedball/speedball05.jpg',
-            location="Speed Ball",
-            description = "Wide angle view.",
-        },
-    ];
+        <div>
+            <h3>Speed Ball</h3>
+            <p>
+                If you want to escape the fantasy of King James Town and Castle and
+                just get back to good, old fashioned speed ball; we got you covered.
+            </p>
+            [%
+                negatives_id="speedball";
+                negative_images = [
+                    {
+                        url = '/images/speedball/speedball01.jpg',
+                        location="Speed Ball",
+                        description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/speedball/speedball02.jpg',
+                        location="Speed Ball",
+                        description = "Numerous barrels that are easily movable to set up the field as you wish.",
+                    },
+                    {
+                        url = '/images/speedball/speedball03.jpg',
+                        location="Speed Ball",
+                        description = "A large supply of spools is available for use on the field.",
+                    },
+                    {
+                        url = '/images/speedball/speedball04.jpg',
+                        location="Speed Ball",
+                        description = "Larger view of the field.",
+                    },
+                    {
+                        url = '/images/speedball/speedball05.jpg',
+                        location="Speed Ball",
+                        description = "Wide angle view.",
+                    },
+                ];
 
-    PROCESS negatives.tt
-%]
+                PROCESS negatives.tt
+            %]
+        </div>
 
-<h3>Action Shots</h3>
-<p>
-    The field in use by paintball-outfitter patrons.
-</p>
-[%
-    negatives_id="actionshots";
-    negative_images = [
-        {
-            url = '/images/actionshots/as01.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as02.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as03.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as04.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as05.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as06.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as07.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as08.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as09.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as10.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as11.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as12.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as13.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as14.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as15.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as16.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-        {
-            url = '/images/actionshots/as17.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-    ];
+        <div>
+            <h3>Action Shots</h3>
+            <p>
+                The field in use by paintball-outfitter patrons.
+            </p>
+            [%
+                negatives_id="actionshots";
+                negative_images = [
+                    {
+                        url = '/images/actionshots/as01.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as02.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as03.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as04.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as05.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as06.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as07.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as08.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as09.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as10.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as11.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as12.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as13.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as14.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as15.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as16.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                    {
+                        url = '/images/actionshots/as17.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                ];
 
-    PROCESS negatives.tt
-%]
+                PROCESS negatives.tt
+            %]
+        </div>
 
-<h3>Field Map</h3>
-<p>
-    A graphical representation of the field.
-</p>
-[%
-    negatives_id="fieldmap";
-    negative_images = [
-        {
-            url = '/images/pb_field_map_smaller.jpg',
-            location="Action Shots",
-            #description = "Flag holding obstacle",
-        },
-    ];
+        <div>
+            <h3>Field Map</h3>
+            <p>
+                A graphical representation of the field.
+            </p>
+            [%
+                negatives_id="fieldmap";
+                negative_images = [
+                    {
+                        url = '/images/pb_field_map_smaller.jpg',
+                        location="Action Shots",
+                        #description = "Flag holding obstacle",
+                    },
+                ];
 
-    PROCESS negatives.tt
-%]
-
+                PROCESS negatives.tt
+            %]
+        </div>
+    </div>
 </div>
 
-
-
-<script type="">
-    $("img[rel]").overlay();
-</script>
+[%PROCESS tab_js.tt%]
+[%PROCESS overlay_js.tt%]

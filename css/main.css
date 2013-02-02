@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-    color: #0099FF;
+    color: #000;
     background-image: url();
     text-decoration: underline overline;
 }
@@ -45,7 +45,7 @@ a:hover {
 }
 
 .menu_item a:hover {
-    color: #0099FF;
+    color: #ff0000;
     background-image: url();
     text-decoration: underline overline;
 }
@@ -145,3 +145,63 @@ img.center { display: block;   margin-left: auto;   margin-right: auto; }
   font-size:15px;
 }
 /* /overlay style */
+
+/* tabs */
+/* root element for tabs  */
+ul.tabs {
+    margin:0 !important;
+    padding:0;
+    height:30px;
+    border-bottom:1px solid #666;
+}
+
+/* single tab */
+ul.tabs li {
+    float:left;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a {
+    float:left;
+    font-size:13px;
+    display:block;
+    padding:5px 10px;
+    text-decoration:none;
+    border:1px solid #666;
+    border-bottom:0px;
+    height:18px;
+    background-color:#efefef;
+    color:#777;
+    margin-right:2px;
+    position:relative;
+    top:1px;
+    outline:0;
+    -moz-border-radius:4px 4px 0 0;
+}
+
+ul.tabs a:hover {
+    background-color:#F7F7F7;
+    color:#333;
+}
+
+/* selected tab */
+ul.tabs a.current {
+    background-color:#5C1910;
+    border-bottom:1px solid #5C1910;
+    color:#FFF;
+    cursor:default;
+}
+
+/* tab pane */
+.panes div {
+    /*display:none;*/
+    /*border:1px solid #666;*/
+    /*border-width:0 1px 1px 1px;*/
+    /*min-height:200px;*/
+    /*padding:15px 20px;*/
+    /*background-color:#ddd;*/
+}
+/* /tabs */

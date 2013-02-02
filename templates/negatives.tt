@@ -16,6 +16,8 @@
             </div>
         </div>
     </div>
+    
+    [%IF negative_images.size > 4 %]
     <div style="text-align:center; width:600px;">
         <!-- "previous page" action -->
         <a class="prev browse left">&lt;&lt;&lt;</a>
@@ -23,6 +25,8 @@
         <!-- "next page" action -->
         <a class="next browse right">&gt;&gt;&gt;</a>
     </div>
+    [%END%]
+    
 </div>
 [%FOREACH img IN negative_images%]
 <div class="simple_overlay" id="[%negatives_id%]_[% loop.count %]">

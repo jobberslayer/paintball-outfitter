@@ -2,23 +2,31 @@
     menu_items = [
         {
             name = "Home",
-            uri = "index.cgi?"
+            uri = "/index.cgi?"
         },
         {
             name = "Paintball",
-            uri = "index.cgi?page=paintball"
+            uri = "/index.cgi?page=paintball"
         },
         {
             name = "AirSoft",
-            uri = "index.cgi?page=airsoft"
+            uri = "/index.cgi?page=airsoft"
         },
         {
             name = "Laser Tag",
-            uri = "index.cgi?page=lasertag"
+            uri = "/index.cgi?page=lasertag"
         },
         {
             name = "Fields",
-            uri = "index.cgi?page=fields"
+            uri = "/index.cgi?page=fields"
+        },
+        {
+            name = "Videos",
+            uri = "/index.cgi?page=videos"
+        },
+        {
+            name = "Links",
+            uri = "/index.cgi?page=links"
         },
     ]
 %]

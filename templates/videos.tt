@@ -1,0 +1,28 @@
+<div class="normal">
+    <ul class="tabs">
+        <li><a href="#">Zip Line</a></li>
+        <li><a href="#">Bazooka</a></li>
+    </ul>
+    
+    <div class="panes">
+        <div>
+            <iframe class="youtube-player" type="text/html" width="590" height="355" src="http://www.youtube.com/embed/ShfNAxFQlNI" frameborder="0">
+            </iframe>
+            <p>
+                Thanks to Echo 6 for this video.  Find more Echo 6 videos on youtube
+                <a href="http://www.youtube.com/user/echo6airsoftteam" target='blank'>HERE!</a>
+            </p>
+        </div>
+        
+        <div>
+            <iframe class="youtube-player" type="text/html" width="590" height="355" src="http://www.youtube.com/embed/1yBkWXq72XI" frameborder="0">
+            </iframe>
+            <p>
+                Thanks to Echo 6 for this video.  Find more Echo 6 videos on youtube
+                <a href="http://www.youtube.com/user/echo6airsoftteam" target='blank'>HERE!</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+[%PROCESS tab_js.tt%]

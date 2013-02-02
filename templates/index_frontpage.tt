@@ -9,10 +9,10 @@
     <hr/>
     <div style="width:100%; height:200px; overflow: auto">
         [%FOREACH comment IN comments%]
-        <b><small>[%comment.name%] @ [%comment.timestamp%]</small></b><br>
+        <b><small>[%comment.name%] @ [%comment.timestamp%]</small></b><br/>
         <small>[%comment.text%]</small>
         <hr/>
-        <br>
+        <br/>
         [%END%]
     </div>
 </div>

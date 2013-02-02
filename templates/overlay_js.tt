@@ -1,0 +1,3 @@
+<script type="">
+    $("img[rel]").overlay();
+</script>

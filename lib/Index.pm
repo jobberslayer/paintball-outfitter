@@ -92,6 +92,24 @@ sub page_fields {
     $self->display($self->template('fields.tt', $vars));
 }
 
+sub page_videos {
+    my ($self) = @_;
+
+    my ($vars) = $self->members();
+    $$vars{title} = 'Videos';
+
+    $self->display($self->template('videos.tt', $vars));
+}
+
+sub page_links {
+    my ($self) = @_;
+
+    my ($vars) = $self->members();
+    $$vars{title} = 'Links';
+
+    $self->display($self->template('links.tt', $vars));
+}
+
 sub site_down {
     my ($self) = @_;
 
