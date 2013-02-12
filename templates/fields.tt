@@ -1,5 +1,5 @@
 <div class="normal">
-    <h3>Wiaver</h3>
+    <h3>Waiver</h3>
     <p>
         [%PROCESS waiver.tt%].
     </p>
