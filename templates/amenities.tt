@@ -1,3 +1,9 @@
-<table border="0"><tbody><tr>
-    <td>ProShop and  4 fields.</td>
+<table border="0"><tbody>
+<tr>
+    <td>
+      <ul>
+        <li>ProShop and  4 fields.</li>
+        <li>[% PROCESS "zipline.tt" %]</i></li>
+      </ul>
+    </td>
 </tr></tbody></table>

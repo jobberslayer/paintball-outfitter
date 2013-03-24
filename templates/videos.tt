@@ -9,6 +9,9 @@
             <iframe class="youtube-player" type="text/html" width="590" height="355" src="http://www.youtube.com/embed/ShfNAxFQlNI" frameborder="0">
             </iframe>
             <p>
+              [% PROCESS 'zipline.tt' %]
+            </p>
+            <p>
                 Thanks to Echo 6 for this video.  Find more Echo 6 videos on youtube
                 <a href="http://www.youtube.com/user/echo6airsoftteam" target='blank'>HERE!</a>
             </p>
