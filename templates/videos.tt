@@ -1,6 +1,6 @@
 <div class="normal">
     <ul class="tabs">
-        <li><a href="#">Zip Line</a></li>
+        <!--<li><a href="#">Zip Line</a></li>-->
         <li><a href="#">Bazooka</a></li>
     </ul>
     
