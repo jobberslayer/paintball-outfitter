@@ -5,6 +5,7 @@
     </ul>
     
     <div class="panes">
+        <!--
         <div>
             <iframe class="youtube-player" type="text/html" width="590" height="355" src="http://www.youtube.com/embed/ShfNAxFQlNI" frameborder="0">
             </iframe>
@@ -16,6 +17,7 @@
                 <a href="http://www.youtube.com/user/echo6airsoftteam" target='blank'>HERE!</a>
             </p>
         </div>
+        -->
         
         <div>
             <iframe class="youtube-player" type="text/html" width="590" height="355" src="http://www.youtube.com/embed/1yBkWXq72XI" frameborder="0">
